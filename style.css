@@ -4,12 +4,18 @@
   box-sizing: border-box;
 }
 
-/* Nav Styles */
+ Nav Styles */
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 100px;
+}
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
 }
 
 .nav-title {
@@ -48,13 +54,17 @@ nav {
 .background-image {
   background-image: url(./Assets/Hero-bg.png);
   background-size: cover;
-  background-position: top;
+  background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
   height: 698px;
+  
 }
 
 /* Main About Section */
+.main {
+    max-width: 1160px;
+}
 .action-main {
   display: flex;
   justify-content: space-between;
@@ -75,6 +85,7 @@ nav {
   font-size: 42px;
   font-weight: bold;
   margin-bottom: 15px;
+  color: #252432;
 }
 
 .action-title p {
@@ -90,4 +101,49 @@ nav {
   height: auto;
   min-width: 300px;
   border-radius: 48px;
+}
+
+/* Joined Section Styles */
+
+.joined-full-details {
+    max-width: 1140px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 24px;
+    text-align: center;
+    color: #4E47FF;
+    background-color: #bdbcd55b;
+}
+.joined-description {
+    font-size: 38px;
+    font-weight: bold;
+    color: #252432;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  gap: 30px;
+  text-align: center;
+}
+
+.stat-box {
+  flex: 1;
+  min-width: 150px;
+}
+
+.stat-box h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stat-box p {
+  font-size: 16px;
+  opacity: 0.9;
 }

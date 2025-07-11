@@ -31,6 +31,7 @@ nav {
   font-size: 32px;
   color: #4E47FF;
   font-weight: bold;
+  margin-top: 20px;
 }
 
 .btn-primary {
@@ -42,11 +43,15 @@ nav {
   border: none;
   font-size: 16px;
   cursor: pointer;
+  
 }
 .btn-primary:hover {
   background-color: #b2fd31;
   transform: scale(1.02);
   transition: all 0.3s ease;
+}
+.btn-nav {
+  margin-top: 20px
 }
 
 /* Banner Styles */
@@ -184,14 +189,21 @@ nav {
   border-radius: 10px;
   padding: 20px;
   width: 300px;
-  box-shadow: 0 1px 1px
+
 }
 
-.stars {
-  color: #fbbf24;
-  font-size: 18px;
+.stars img {
+  width: 30px;
+  height: auto;
+  border: 2px solid transparent; /* invisible border to keep size */
+  border-radius: 4px;
+  transition: border 0.2s ease;
 }
 
+.stars img:hover {
+  border: 2px solid purple; /* purple border only on hover */
+  cursor: pointer;
+}
 .testimonial-title {
   font-weight: bold;
   font-size: 18px;
@@ -301,7 +313,7 @@ footer {
   padding: 60px 20px;
 }
 .footer-logo {
-  font-size: 48px;
+  font-size: 20pxpx;
   font-weight: bold;
   color: #4E47FF;
   margin-bottom: 20px;
